@@ -1,14 +1,13 @@
 import React from 'react'
+import Header from '../components/header'
 import Layout from '../components/layout'
 
-const Index = () => {
+const Nosotros = () => {
     return (
         <Layout>
-            <div>
-                <h1>Index</h1>
-            </div>
+            <h2>From Nosotros</h2>
         </Layout>
     )
 }
 
-export default Index
+export default Nosotros
