@@ -1,10 +1,12 @@
 import React from 'react'
+import Header from '../components/header'
+import Layout from '../components/layout'
 
 const Nosotros = () => {
     return (
-        <div>
+        <Layout>
             <h2>From Nosotros</h2>
-        </div>
+        </Layout>
     )
 }
 
