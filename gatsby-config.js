@@ -32,8 +32,14 @@ module.exports = {
         apiURL: 'http://localhost:1337',
         queryLimit: 1000,
         contentTypes: ['propiedades', 'paginas', 'categorias']
-      }
+      },
     },
+    // {
+    //   resolve: 'gatsby-source-contentful',
+    //   spaceId: `rocybtov1ozk`,
+    //   // Learn about environment variables: https://gatsby.dev/env-vars
+    //   accessToken: '6f35edf0db39085e9b9c19bd92943e4519c77e72c852d961968665f1324bfc94',
+    // }
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
