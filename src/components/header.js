@@ -1,9 +1,27 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import Navegacion from './navegacion'
 import { css } from '@emotion/core'
+import styled from '@emotion/styled'
+
+const ImgLogo = styled.img`
+    height: 5rem;
+    margin-left: 5rem;
+`;
 
 const Header = () => {
+
+    // Hacer la consulta con Graphql
+    const { logo } = useStaticQuery(graphql`
+    query {
+        logo: file(relativePath: {eq: "logo.png"}){
+            publicURL
+            id
+        }
+      }    
+    `);
+
+
     return (
         <header
             css={css`
@@ -24,7 +42,9 @@ const Header = () => {
                 }
             `}
             >
-                <Link to="/">Bienes Raíces</Link>
+                <Link to="/">
+                    <ImgLogo src={logo.publicURL} alt="Logo de Bienes y Raices" />
+                </Link>
                 <Navegacion />
             </div>
         </header>
