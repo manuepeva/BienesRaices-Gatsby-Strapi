@@ -6,6 +6,7 @@ import { css } from '@emotion/core'
 import BackgroundImage from 'gatsby-background-image'
 import heroCSS from '../css/hero.module.css'
 import Encuentra from '../components/encuentra'
+import ListadoPropiedades from '../components/listadoPropiedades'
 
 const ImageBackground = styled(BackgroundImage)`
     height: 600px;
@@ -41,6 +42,7 @@ const Index = () => {
                     </div>
                 </main>
                 <Encuentra />
+                <ListadoPropiedades />
             </div>
         </Layout>
     )
