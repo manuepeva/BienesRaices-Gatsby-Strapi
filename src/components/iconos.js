@@ -36,15 +36,15 @@ const Iconos = ({ wc, estacionamiento, habitaciones }) => {
         <>
             <ListadoIconos>
                 <li>
-                    <img src={imagenesIconos[2].node.publicURL} alt="Icono WC" />
+                    <img src={imagenesIconos[5].node.publicURL} alt="Icono WC" />
                     <p>{wc}</p>
                 </li>
                 <li>
-                    <img src={imagenesIconos[1].node.publicURL} alt="Icono estacionamiento" />
+                    <img src={imagenesIconos[3].node.publicURL} alt="Icono estacionamiento" />
                     <p>{estacionamiento}</p>
                 </li>
                 <li>
-                    <img src={imagenesIconos[0].node.publicURL} alt="Icono habitaciones" />
+                    <img src={imagenesIconos[4].node.publicURL} alt="Icono habitaciones" />
                     <p>{habitaciones}</p>
                 </li>
             </ListadoIconos>

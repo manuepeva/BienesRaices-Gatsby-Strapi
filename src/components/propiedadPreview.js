@@ -1,8 +1,22 @@
 import React from 'react'
-import Iconos from './iconos';
+import Iconos from './iconos'
 import styled from '@emotion/styled'
 import Image from 'gatsby-image'
+import { Link } from 'gatsby'
+import urlslug from 'url-slug'
 
+const Boton = styled(Link)`
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #75ab00;
+    width: 100%;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+`;
 
 const Card = styled.div`
     border: 1px solid #e1e1e1;
@@ -24,9 +38,9 @@ const Contenido = styled.div`
     }
 `;
 const PropiedadPreview = ({ propiedad }) => {
-    const { nombre, descripcion, imagen, wc, estacionamiento,
+    const { nombre, imagen, wc, estacionamiento,
         habitaciones, precio } = propiedad;
-    console.log((imagen.sharp.fluid), 'aqui el texto')
+    // console.log((imagen.sharp.fluid), 'aqui el texto')
     return (
         <Card>
 
@@ -42,6 +56,9 @@ const PropiedadPreview = ({ propiedad }) => {
                     estacionamiento={estacionamiento}
                     habitaciones={habitaciones}
                 />
+                <Boton to={urlslug(nombre)}>
+                    Ver Propiedad
+            </Boton>
             </Contenido>
         </Card>
     )

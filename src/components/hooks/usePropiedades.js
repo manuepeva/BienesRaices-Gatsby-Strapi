@@ -23,7 +23,7 @@ const usePropiedades = () => {
             }
             imagen {
                 sharp: childImageSharp{
-                    fluid(maxWidth: 200, maxHeight: 200){
+                    fluid(maxWidth: 600, maxHeight: 400){
                       ...GatsbyImageSharpFluid_withWebp
                     }
                 }
